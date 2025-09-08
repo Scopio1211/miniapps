@@ -1,0 +1,166 @@
+import React from "react"; import { ArrowRight, ExternalLink, Sparkles, Twitter, MessageCircleMore, Radio } from "lucide-react";
+
+export default function SeedAltar() { return ( <div className="min-h-screen bg-neutral-950 text-neutral-100 selection:bg-amber-300/40 selection:text-neutral-900"> {/* Nav */} <header className="sticky top-0 z-40 backdrop-blur bg-neutral-950/60 border-b border-neutral-800"> <div className="max-w-6xl mx-auto px-4 py-3 flex items-center justify-between"> <div className="flex items-center gap-2"> <div className="h-8 w-8 rounded-2xl bg-gradient-to-br from-amber-400 to-orange-600 grid place-items-center shadow-lg shadow-amber-500/20"> <Sparkles className="h-4 w-4" /> </div> <span className="font-semibold tracking-wide">SEED ALTAR</span> </div> <nav className="hidden md:flex gap-6 text-sm"> <a href="#about" className="hover:text-amber-300">About</a> <a href="#token" className="hover:text-amber-300">ALTAR Token</a> <a href="#roadmap" className="hover:text-amber-300">Roadmap</a> <a href="#community" className="hover:text-amber-300">Community</a> </nav> <div className="flex items-center gap-2"> <a href="https://rainbow.me/token/base/0x1254290214e593a502b97136bc9d100007f1fcdd" target="_blank" rel="noreferrer" className="inline-flex items-center gap-2 rounded-2xl bg-amber-400 text-neutral-900 px-4 py-2 text-sm font-semibold hover:shadow-lg hover:shadow-amber-500/30"> View Token <ExternalLink className="h-4 w-4" /> </a> </div> </div> </header>
+
+{/* Hero */}
+  <section className="relative overflow-hidden">
+    <div className="absolute inset-0 bg-[radial-gradient(ellipse_at_top,_var(--tw-gradient-stops))] from-amber-500/10 via-amber-400/0 to-transparent" />
+    <div className="max-w-6xl mx-auto px-4 py-24">
+      <div className="grid md:grid-cols-2 gap-10 items-center">
+        <div>
+          <h1 className="text-4xl md:text-6xl font-bold leading-tight">
+            108 Seeds of Light, <span className="text-amber-300">Ancestral Power</span>, and Eternal Energy
+          </h1>
+          <p className="mt-5 text-neutral-300 md:text-lg">
+            SEED ALTAR is a sacred digital temple where art meets spirit. Each NFT is a living seed—an altar of wisdom, poetry, and power—planted on the blockchain to live forever.
+          </p>
+          <div className="mt-6 flex flex-wrap gap-3">
+            <a href="#about" className="inline-flex items-center gap-2 rounded-2xl border border-neutral-700 px-4 py-2 text-sm hover:border-amber-400/60">
+              Learn More <ArrowRight className="h-4 w-4" />
+            </a>
+            <a
+              href="https://rainbow.me/token/base/0x1254290214e593a502b97136bc9d100007f1fcdd"
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-2 rounded-2xl bg-neutral-100 text-neutral-900 px-4 py-2 text-sm font-semibold hover:bg-white"
+            >
+              Explore on Rainbow <ExternalLink className="h-4 w-4" />
+            </a>
+          </div>
+          <p className="mt-4 text-xs text-neutral-400">Powered by Base • Contract: 0x1254...fcdd</p>
+        </div>
+        <div className="relative">
+          <div className="aspect-square rounded-3xl bg-gradient-to-br from-neutral-800 to-neutral-900 p-1">
+            <div className="h-full w-full rounded-3xl bg-[conic-gradient(at_top_right,_#fbbf24_0%,_#f97316_25%,_#111827_60%)] opacity-20" />
+          </div>
+          <div className="absolute -bottom-6 -right-6 hidden md:block">
+            <div className="rounded-3xl border border-neutral-800 bg-neutral-900/80 backdrop-blur px-4 py-3 text-sm">
+              <div className="font-semibold">ALTAR • Base</div>
+              <div className="text-neutral-400">Sacred NFT Collection</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* About */}
+  <section id="about" className="border-t border-neutral-800 bg-neutral-950">
+    <div className="max-w-5xl mx-auto px-4 py-16">
+      <h2 className="text-2xl md:text-3xl font-bold">About the Project</h2>
+      <p className="mt-4 text-neutral-300 leading-relaxed">
+        The Seed Altar is a sacred NFT collection of <span className="font-semibold text-neutral-100">108 digital relics</span>—each one a seed of wisdom, light, and ancestral power. Crafted as eternal offerings, they awaken the spirit and connect collectors to higher realms. Our first cycle, <span className="italic">Born to Conquer</span>, blends prophecy, poetry, and visual energy to guide seekers on their path of victory, rebirth, and inner power.
+      </p>
+    </div>
+  </section>
+
+  {/* Token Overview */}
+  <section id="token" className="border-t border-neutral-800 bg-neutral-900/30">
+    <div className="max-w-6xl mx-auto px-4 py-16">
+      <div className="grid md:grid-cols-3 gap-6">
+        <div className="rounded-3xl border border-neutral-800 p-6">
+          <div className="text-neutral-400 text-sm">Max Supply</div>
+          <div className="text-3xl font-bold mt-2">995,000,000</div>
+          <div className="text-neutral-400 text-sm mt-1">ALTAR</div>
+        </div>
+        <div className="rounded-3xl border border-neutral-800 p-6">
+          <div className="text-neutral-400 text-sm">Network</div>
+          <div className="text-3xl font-bold mt-2">Base</div>
+          <div className="text-neutral-400 text-sm mt-1">EVM • L2</div>
+        </div>
+        <div className="rounded-3xl border border-neutral-800 p-6">
+          <div className="text-neutral-400 text-sm">Launched</div>
+          <div className="text-3xl font-bold mt-2">Sept 2025</div>
+          <div className="text-neutral-400 text-sm mt-1">Fresh Deployment</div>
+        </div>
+      </div>
+
+      <div className="mt-6 grid md:grid-cols-2 gap-4">
+        <a
+          href="https://basescan.org/token/0x1254290214e593a502b97136bc9d100007f1fcdd"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-2xl border border-neutral-800 p-4 flex items-center justify-between hover:border-amber-400/60"
+        >
+          <span>View on BaseScan</span>
+          <ExternalLink className="h-4 w-4" />
+        </a>
+        <a
+          href="https://dexscreener.com/base/0x1254290214e593a502b97136bc9d100007f1fcdd"
+          target="_blank"
+          rel="noreferrer"
+          className="rounded-2xl border border-neutral-800 p-4 flex items-center justify-between hover:border-amber-400/60"
+        >
+          <span>Track on DexScreener</span>
+          <ExternalLink className="h-4 w-4" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Roadmap */}
+  <section id="roadmap" className="border-t border-neutral-800 bg-neutral-950">
+    <div className="max-w-6xl mx-auto px-4 py-16">
+      <h2 className="text-2xl md:text-3xl font-bold">Roadmap</h2>
+      <div className="mt-6 grid md:grid-cols-3 gap-6">
+        <div className="rounded-3xl border border-neutral-800 p-6">
+          <h3 className="font-semibold text-lg">Phase 1 — Birth of the Seed</h3>
+          <ul className="mt-3 text-neutral-300 space-y-2 text-sm leading-relaxed">
+            <li>ALTAR token deployed on Base</li>
+            <li>Release of 108 NFT relics</li>
+            <li>Website & brand launch</li>
+          </ul>
+        </div>
+        <div className="rounded-3xl border border-neutral-800 p-6">
+          <h3 className="font-semibold text-lg">Phase 2 — Growth of the Temple</h3>
+          <ul className="mt-3 text-neutral-300 space-y-2 text-sm leading-relaxed">
+            <li>Community rituals & live spaces</li>
+            <li>Collector rewards & airdrops</li>
+            <li>Poetry + audio token drops</li>
+          </ul>
+        </div>
+        <div className="rounded-3xl border border-neutral-800 p-6">
+          <h3 className="font-semibold text-lg">Phase 3 — Eternal Flame</h3>
+          <ul className="mt-3 text-neutral-300 space-y-2 text-sm leading-relaxed">
+            <li>Partnerships & collabs</li>
+            <li>On-chain rituals & quests</li>
+            <li>Physical relics for top holders</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  {/* Community */}
+  <section id="community" className="border-t border-neutral-800 bg-neutral-900/30">
+    <div className="max-w-6xl mx-auto px-4 py-16">
+      <h2 className="text-2xl md:text-3xl font-bold">Join the Circle</h2>
+      <p className="mt-3 text-neutral-300">Follow the flame and enter the temple. Updates, drops, and rituals live here.</p>
+      <div className="mt-6 grid sm:grid-cols-3 gap-4">
+        <a href="https://t.me/THESEEDALTAR99" target="_blank" rel="noreferrer" className="rounded-2xl border border-neutral-800 p-4 flex items-center justify-between hover:border-amber-400/60">
+          <span className="inline-flex items-center gap-2"><MessageCircleMore className="h-5 w-5"/>Telegram</span>
+          <ExternalLink className="h-4 w-4" />
+        </a>
+        <a href="https://x.com/mamahvicto22173" target="_blank" rel="noreferrer" className="rounded-2xl border border-neutral-800 p-4 flex items-center justify-between hover:border-amber-400/60">
+          <span className="inline-flex items-center gap-2"><Twitter className="h-5 w-5"/>X (Twitter)</span>
+          <ExternalLink className="h-4 w-4" />
+        </a>
+        <a href="https://warpcast.com/borntoconquer999" target="_blank" rel="noreferrer" className="rounded-2xl border border-neutral-800 p-4 flex items-center justify-between hover:border-amber-400/60">
+          <span className="inline-flex items-center gap-2"><Radio className="h-5 w-5"/>Warpcast</span>
+          <ExternalLink className="h-4 w-4" />
+        </a>
+      </div>
+    </div>
+  </section>
+
+  {/* Footer */}
+  <footer className="border-t border-neutral-800">
+    <div className="max-w-6xl mx-auto px-4 py-10 text-sm text-neutral-400">
+      <div>© {new Date().getFullYear()} SEED ALTAR • Powered by Base</div>
+      <div className="mt-2">Contract: 0x1254290214e593a502b97136bc9d100007f1fcdd</div>
+    </div>
+  </footer>
+</div>
+
+); }
+
